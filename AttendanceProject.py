@@ -19,7 +19,7 @@ for cl in myList:
 print(classNames)
 
 def findEncodings(images):
-    encodeList =[nn]
+    encodeList =[]
     for img in images:
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         encode = face_recognition.face_encodings(img)[0]
