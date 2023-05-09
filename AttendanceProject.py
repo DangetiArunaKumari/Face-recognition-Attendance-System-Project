@@ -57,7 +57,7 @@ while True:
         faceDis = face_recognition.face_distance(encodeListKnown, encodeFace)
         print(faceDis)
         matchIndex = np.argmin(faceDis)
-        if matches[matchIndex]:
+        if matches[matchIndex]:   
             name = classNames[matchIndex].upper()
             print(name)
             y1, x2, y2, x1 = faceLoc
